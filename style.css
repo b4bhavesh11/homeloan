@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6e7bff, #b388eb);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+    background: rgb(109, 195, 124);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+    text-align: center;
+    position: relative;
+    top: 3ch;
+    left: 35px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.textbox {
+    margin-bottom: 20px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.textbox input:focus {
+    border-color: #d8c111;
+    box-shadow: 0 0 8px rgba(110, 123, 255, 0.5);
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background: #6e7bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #b388eb;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: linear-gradient(45deg, #ff6b6b, #f1c40f, #8e44ad, #3498db);
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    color: transparent; /* Hide the default color */
+    text-align: left; /* Center the text */
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#clock {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Blob Button Styles */
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.blob-btn {
+    --numOfBlobs: 4;
+    --cyan: #0505A9;
+    --dark: #FFFFFF;
+    --borderW: 2px;
+
+    z-index: 1;
+    position: relative;
+    padding: 20px 46px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--cyan);
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.blob-btn::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: var(--borderW) solid var(--cyan);
+    border-radius: 30px;
+}
+
+.blob-btn::after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: calc(var(--borderW) * 1.5);
+    top: calc(var(--borderW) * 1.5);
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s 0.2s;
+    border-radius: 30px;
+}
+
+.blob-btn:hover {
+    color: var(--dark);
+}
+
+.blob-btn:hover::after {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+}
+
+.blob-btn__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #ffffff;
+}
+
+.blob-btn__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url('#goo');
+}
+
+.blob-btn__blob {
+    position: absolute;
+    top: var(--borderW);
+    width: calc(100% / var(--numOfBlobs));
+    height: 100%;
+    background: var(--cyan);
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+}
+
+.blob-btn__blob:nth-child(1) {
+    left: 0%;
+    transition-delay: 0s;
+}
+
+.blob-btn__blob:nth-child(2) {
+    left: 25%;
+    transition-delay: 0.08s;
+}
+
+.blob-btn__blob:nth-child(3) {
+    left: 50%;
+    transition-delay: 0.16s;
+}
+
+.blob-btn__blob:nth-child(4) {
+    left: 75%;
+    transition-delay: 0.24s;
+}
+
+.blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.7);
+}
+
+
