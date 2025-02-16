@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AU Bank Login</title>
+  <link rel="stylesheet" href="stylecss-login-page.css"> 
+  <script src="script.js"></script>   
+  <img src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+     alt="Background Image" 
+     style="
+        position: absolute; 
+        top: 0%; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+        border-radius: 50px;
+        box-shadow: 0 10px 5px rgba(244, 4, 48, 0.2);
+    ">
+</head>
+<body>
+  <div class="container">
+    <div class="brand-logo"></div>
+    <div class="brand-title">AU BANK</div>
+    <div class="inputs">
+      <label for="empId">EMP ID</label>
+      <input type="text" id="empId" placeholder="EMP ID" onblur="validateEmpId()"> 
+      <span id="empIdError" class="error"></span> 
+      <label for="password">PASSWORD</label>
+      <input type="password" id="password" placeholder="Min 6 characters long">
+      <script src="script.js"></script>
+      <button class="button-85" role="button" onclick="login()">LOGIN</button>
+    </div>
+    <a href="https://twitter.com/prathkum">© 2025 Bhavesh Patel. All rights reserved</a>
+  </div>
+</body>
+</html>

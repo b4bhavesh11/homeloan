@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+input {
+  caret-color: red;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ecf0f3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    overflow: hidden;
+    font-family: "Roboto Mono", serif;
+    padding: 8px;
+  }
+   /* *********************************************Main Page contain all the things********************************************************** */
+
+  .container { /*main Page contain all the things*/
+    position: relative;
+    width: 1450px;
+    height: 650px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    /* ***********************************************Main Middle Banner************************************************************************ */
+  }
+  .logocontainer { /* Application form banner design */
+    width: 500px;
+    height: 40px;
+    border-radius: 25px;sss
+    padding: 0px; 
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 20px 20px 20px #cbced1, -14px -14px 20px white;
+    top: -10px;
+    display: flex;
+    margin:0 auto;
+    align-items: center;  /* Vertically center */
+    justify-content: center;  /* Horizontally center */
+    text-align: center;
+    color: rgb(80, 122, 122);
+  }
+   /* *******************************************************Logo Banner************************************************************************ */
+.top-right-logo { /* Au Bank Logo */
+  position: absolute; /* Fixed position to stay in place while scrolling */
+  top: 40px; 
+  right: 150px; 
+  z-index: 1000; 
+  width: 1%; 
+  height: 1%; 
+  border-radius: 8px; 
+  background:  #ecf0f3;; /* Optional: Add a background color */
+  padding: 10px; /* Optional: Add padding around the logo */
+  object-fit: contain;
+}
+
+/* ****************************************************Data Collection Form ******************************************************************* */
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 10px;
+  height: 10px;
+  font-size: 12px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  position: relative;
+  text-align: middle;
+  margin-top: -10px;
+  top: 10px; /* Adjust top position as needed */
+  left: 10px; /* Adjust left position as needed */
+  margin-bottom: 5px;
+  display: flex ;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  width: 350px;
+}
+.inputs {
+  display: flex;
+  align-items: center;  /* Align labels & inputs in a row */
+  gap: 15px;  /* Space between label and input */
+  margin-top: 20px;
+}
+
+.inputscustomername { /* Margin for Customer Name*/
+  display: flex;
+  align-items: center;  /* Align labels & inputs in a row */
+  gap: 22px;  /* Space between label and input */
+  margin-top: 12px;
+  color: rgb(102, 7, 7);
+}
+
+/* Style labels */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 100px;  /* Ensure labels have the same width */
+  text-align: left;}
+
+  .Bullettag {   /* for the Basic Details */
+    width: 200px; /* Fixed width */
+    height: 30px; /* Fixed height */
+    border-radius: 25px; /* Rounded corners */
+    padding: 0px; /* No padding */
+    box-sizing: border-box; /* Include padding and border in the element's dimensions */
+    background: #ecf0f3; /* Background color */
+    box-shadow: 10px 10px 10px #cbced1, -14px -14px 20px white; /* Shadow effect */
+    top: -10px; /* Position from the top */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    text-align: center; /* Center text */
+    color: rgb(80, 122, 122); /* Text color */
+    margin: 1px; /* Margin around the element */
+}
+.LoginDetails {   /* for the Basic Details */
+  width: 200px; /* Fixed width */
+  height: 30px; /* Fixed height */
+  border-radius: 25px; /* Rounded corners */
+  padding: 0px; /* No padding */
+  box-sizing: border-box; /* Include padding and border in the element's dimensions */
+  background: #ecf0f3; /* Background color */
+  box-shadow: 10px 10px 10px #cbced1, -14px -14px 20px white; /* Shadow effect */
+  top: 0px; /* Position from the top */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  text-align: center; /* Center text */
+  color: rgb(80, 122, 122); /* Text color */
+  margin: 15px; /* Margin around the element */
+  margin-left: 0px;
+}
+
+.inputloanamount { /* Margin for Customer Name*/
+  display: flex;
+  align-items: center;  /* Align labels & inputs in a row */
+  gap: 30px;  /* Space between label and input */
+  margin-top: 12px;
+}
+
+.LoginDetailsdata { /* Margin for Customer Name*/
+  display: flex;
+  align-items: center;  /* Align labels & inputs in a row */
+  gap: 30px;  /* Space between label and input */
+  margin-top: 12px;
+}
+
+/*  *******************************************************Drop-Box Customisation ******************************************************************* */
+.RCU { /* Margin for Customer Name*/
+  display: flex;
+  align-items: center;  /* Align labels & inputs in a row */
+  gap: 50px;  /* Space between label and input */
+  margin-top: 12px;
+}
+.RCU select {
+  width: 290px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  padding: 5px; /* Optional: Add padding */
+  background: #ecf0f3; /* Optional: Add background color */
+  box-shadow: inset 2px 2px 5px #cbced1, inset -2px -2px 5px white; /* Optional: Add shadow effect */
+  color: #666; /* Set text color */
+}
+
+.Product { /* Margin for Customer Name*/
+  display: flex;
+  align-items: center;  /* Align labels & inputs in a row */
+  gap: 45px;  /* Space between label and input */
+  margin-top: 12px;}
+
+.Product select {
+  width: 290px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  padding: 5px; /* Optional: Add padding */
+  background: #ecf0f3; /* Optional: Add background color */
+  box-shadow: inset 2px 2px 5px #cbced1, inset -2px -2px 5px white; /* Optional: Add shadow effect */
+  color: #666; /* Set text color */
+}
+
+.Search {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 40px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+
+}
+#ApplicationNo {
+color: rgb(102, 7, 7);
+}
